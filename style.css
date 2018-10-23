@@ -32,6 +32,7 @@ body {
 p {
   font-family: "Syne";
   color: #e5745d;
+  text-align: center
 }
 
 header {
@@ -42,6 +43,19 @@ header {
   padding: 32px;
   text-align: center;
   z-index: 1;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 15pt;
+  float: right;
+  height: 38vh;
+  width: 5vw;
 }
 
 header img {
@@ -57,7 +71,7 @@ section {
   margin: 80px 0 80px 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -96,7 +110,23 @@ div.stamps img {
   width: 550px
 }
 
+#github {
+  width: 38px;
+  padding-bottom: 8px;
+}
 
+#linkedin {
+  width: 40px;
+  padding-left: 1px
+}
 
+#gmail {
+  width: 35px;
+  padding-left: 1px;
+  margin-top: -7px
+}
 
-
+#resume {
+  padding-top: 1em;
+  padding-right: 2em
+}

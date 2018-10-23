@@ -25,9 +25,9 @@ const addStamp = function (x, y) {
   stampsTag.appendChild(img)
 
   // add some audio
-  const audio = document.createElement("audio")
-  audio.setAttribute("src", "assets/plop.mp3")
-  audio.play()
+  // const audio = document.createElement("audio")
+  // audio.setAttribute("src", "assets/plop.mp3")
+  // audio.play()
 
   number = number + 1
   if (number > stamps.length - 1) {
