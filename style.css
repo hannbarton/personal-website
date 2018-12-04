@@ -117,7 +117,7 @@ div.stamps img {
 
 #linkedin {
   width: 40px;
-  padding-left: 1px
+  padding-left: 1px;
 }
 
 #gmail {
@@ -129,4 +129,48 @@ div.stamps img {
 #resume {
   padding-top: 1em;
   padding-right: 2em
+}
+
+a {
+  text-decoration: none;
+  color: #d3d1cf;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  color: pink;
+}
+
+a:active {
+  color: #d3d1cf
+}
+
+#github-icon {
+  width: 35px;
+  height: auto;
+}
+
+#github-icon:hover {
+  transform: scale(1.07);
+  height: auto;
+}
+
+.git-align {
+  display: inline;
+  padding: -1em;
+}
+
+#selfie:hover{
+  transform: scale(1.07);
+}
+
+#name {
+  opacity: .2;
+}
+
+h2 {
+ font-size: 32pt
 }
