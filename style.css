@@ -58,15 +58,6 @@ nav {
   width: 5vw;
 }
 
-header img {
-  width: 136px;
-  transition: width 0.5s;
-}
-
-header.scrolled img {
-  width: 64px;
-}
-
 section {
   margin: 80px 0 80px 0;
   display: flex;
@@ -110,6 +101,10 @@ div.stamps img {
   width: 550px
 }
 
+.pic:hover {
+  transform: scale(1.07)
+}
+
 #github {
   width: 38px;
   padding-bottom: 8px;
@@ -141,7 +136,7 @@ a:visited {
 }
 
 a:hover {
-  color: pink;
+  color: #e5745d;;
 }
 
 a:active {
@@ -167,10 +162,19 @@ a:active {
   transform: scale(1.07);
 }
 
-#name {
-  opacity: .2;
+h3 {
+ font-size: 38pt
 }
 
 h2 {
- font-size: 32pt
+  font-size: 42pt;
+}
+
+header{
+  opacity: .99;
+  transition: opacity 1s;
+}
+
+header.scrolled {
+  opacity: .0;
 }
