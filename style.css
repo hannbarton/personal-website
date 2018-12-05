@@ -56,6 +56,7 @@ nav {
   float: right;
   height: 38vh;
   width: 5vw;
+  z-index: 2;
 }
 
 section {
@@ -107,18 +108,18 @@ div.stamps img {
 
 #github {
   width: 38px;
-  padding-bottom: 8px;
 }
 
 #linkedin {
   width: 40px;
   padding-left: 1px;
+  margin-top: -15px
 }
 
 #gmail {
   width: 35px;
   padding-left: 1px;
-  margin-top: -7px
+  margin-top: -35px;
 }
 
 #resume {
