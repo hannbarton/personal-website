@@ -5,7 +5,6 @@ const stamps = [
   "assets/sputnik.svg",
   "assets/mercury.svg",
   "assets/ursa-major.svg",
-  "assets/sun.svg",
   "assets/meteorite.svg",
   "assets/comet-1.svg",
 ]
