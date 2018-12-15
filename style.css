@@ -39,18 +39,28 @@ p {
 
 header {
   position: fixed;
-  width: 100%;
   text-align: center;
   z-index: 1;
   opacity: .99;
   transition: opacity 1s;
-  left:auto;
-  right: auto;
+  left: 50vw;
+  top: 50vh;
 }
 
 h5 {
   font-size: 12pt;
   text-align: center;
+  opacity: .99;
+  transition: opacity 1s;
+}
+
+h5.scrolled {
+  opacity: .0;
+}
+
+h3 {
+  text-align: center;
+  font-size: 80pt;
 }
 
 #right {
@@ -72,7 +82,7 @@ nav {
 }
 
 section {
-  margin: 300px 0 150px 0;
+  margin: 300px 0 300px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -193,15 +203,13 @@ header.scrolled {
 }
 
 #sun {
-  height: 300px;
-  margin-top: 150px;
+  width: 300px;
   transform: translate(-50%, -50%);
   animation: spin 30s linear infinite;
 }
 
 .sun-container {
-  width: 40vw;
-  left: 0;
+  left: auto;
 }
 
 #small-intro {
