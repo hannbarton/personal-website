@@ -30,4 +30,5 @@ const addStamp = function (x, y) {
 
 document.addEventListener("click", function (event) {
   addStamp(event.pageX, event.pageY)
+  document.querySelector("h5").setAttribute("style", "opacity: .0; transition: opacity 1s;")
 })
