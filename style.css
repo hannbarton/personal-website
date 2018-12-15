@@ -28,7 +28,7 @@ body {
 	max-width: 1120px;
   overflow-x: hidden;
   transition: background-color 1s;
-  margin: 240px auto 240px auto;
+  margin: 200px auto 200px auto;
 }
 
 p {
@@ -50,6 +50,7 @@ header {
 
 h5 {
   font-size: 12pt;
+  text-align: center;
 }
 
 #right {
@@ -189,10 +190,6 @@ header.scrolled {
 
 #intro {
   text-align: right;
-}
-
-#small-intro {
-  font-size: 12pt;
 }
 
 #sun {
