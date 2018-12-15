@@ -34,7 +34,7 @@ body {
 p {
   font-family: "HK Grotesk";
   color: #e5745d;
-  text-align: center
+  text-align: center;
 }
 
 header {
@@ -56,11 +56,6 @@ h5 {
 
 h5.scrolled {
   opacity: .0;
-}
-
-h3 {
-  text-align: center;
-  font-size: 80pt;
 }
 
 #right {
@@ -186,7 +181,8 @@ a:active {
 }
 
 h3 {
- font-size: 38pt
+ font-size: 40pt;
+ text-align: center;
 }
 
 h2 {
