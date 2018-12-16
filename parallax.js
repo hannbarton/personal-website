@@ -25,7 +25,7 @@ const addMovement = function () {
     // is the index's remainder zero?
     // the modulo operator 5 % 2 = 1, 4 % 2 = 0
     if (index % 2 == 1) {
-      rotation = rotation * -1
+      rotation = rotation * - 1
     }
 
     // apply the parallax
@@ -35,7 +35,7 @@ const addMovement = function () {
     contentTag.style.transform = `rotate(${-1 * rotation}deg)`
 
     // check the background
-    if (distanceToSection > -100) {
+    if (distanceToSection > - 100) {
       const dataBackground = section.getAttribute("data-background")
       bodyTag.style.backgroundColor = dataBackground
     }

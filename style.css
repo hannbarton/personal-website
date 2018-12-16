@@ -47,15 +47,13 @@ header {
   top: 50vh;
 }
 
+#intro-selfie {
+  width: 500px;
+}
+
 h5 {
   font-size: 12pt;
   text-align: center;
-  opacity: .99;
-  transition: opacity 1s;
-}
-
-h5.scrolled {
-  opacity: .0;
 }
 
 #right {
@@ -116,7 +114,7 @@ div.stamps img {
 
 #selfie {
   transform: rotate(180deg);
-  width: 550px
+  width: 500px
 }
 
 .pic:hover {
@@ -172,7 +170,7 @@ a:active {
 }
 
 .git-align {
-  display: inline;
+  display: block;
   padding: -1em;
 }
 
@@ -183,11 +181,12 @@ a:active {
 h3 {
  font-size: 40pt;
  text-align: center;
+ margin-bottom: -3em;
 }
 
 h2 {
   font-size: 42pt;
-  text-align: right;
+  text-align: center;
 }
 
 header.scrolled {
@@ -195,7 +194,7 @@ header.scrolled {
 }
 
 #intro {
-  text-align: right;
+  text-align: center;
 }
 
 #sun {
@@ -209,7 +208,7 @@ header.scrolled {
 }
 
 #small-intro {
-  text-align: right;
+  text-align: center;
   font-size: 16pt;
   margin-top: -1em;
 }
@@ -220,7 +219,6 @@ header.scrolled {
 }
 
 .front-page {
-  padding-top: 5em;
-  padding-bottom: 5em
+  height: 50vh;
 }
 
