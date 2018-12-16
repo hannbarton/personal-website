@@ -18,6 +18,12 @@
   src: url(hk-grotesk.woff2), url(hk-grotesk.woff);
 }
 
+@media only screen and (max-width: 1300px) {
+  nav {
+    display: none;
+  }
+}
+
 body {
 	font-family: "HK Grotesk", Arial;
 	font-size: 32px;
