@@ -4,16 +4,6 @@
 }
 
 @font-face {
-  font-family: "Syne";
-  src: url(syne-regular.woff2), url(syne-regular.woff);
-}
-
-@font-face {
-  font-family:  "Syne Extra";
-  src: url(syne-extra.woff2), url(syne-extra.woff);
-}
-
-@font-face {
   font-family:  "HK Grotesk";
   src: url(hk-grotesk.woff2), url(hk-grotesk.woff);
 }
@@ -45,7 +35,7 @@
     padding: 0 20px 0 20px
   }
   h6 {
-    display:block !important;
+    display: block
   }
   nav {
     width: 0vw
@@ -123,7 +113,7 @@
 
 @media only screen and (max-width: 414px) {
   h6 {
-    display:block !important;
+    display: inline-block;
   }
   .small-intro-text {
     vertical-align: middle;
@@ -142,8 +132,8 @@
     position: relative;
   }
   section {
-    padding: 0 0 0 0 !important;
-    margin: 0 0 0 0 !important;
+    padding: 0;
+    margin: 0
   }
   section.self {
     height: 100vh;
@@ -173,8 +163,8 @@
     position: relative;
   }
   section {
-    padding: 0 0 0 0 !important;
-    margin: 0 0 0 0 !important;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0
   }
   section.self {
     height: 100vh;
@@ -224,8 +214,6 @@ header {
 h5 {
   font-size: 12pt;
   text-align: center;
-  left: auto;
-  right: auto;
 }
 
 #right {
@@ -234,7 +222,7 @@ h5 {
 
 nav {
   position: fixed;
-  top: 0;
+  top: -2em;
   right: 0;
   display: flex;
   flex-direction: column;
