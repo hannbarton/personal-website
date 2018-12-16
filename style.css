@@ -222,7 +222,7 @@ h5 {
 
 nav {
   position: fixed;
-  top: -2em;
+  top: -4em;
   right: 0;
   display: flex;
   flex-direction: column;
@@ -297,11 +297,6 @@ div.stamps img {
   margin-top: -35px;
 }
 
-#resume {
-  padding-top: 1em;
-  padding-right: 2em
-}
-
 a {
   text-decoration: none;
   color: #d3d1cf;
@@ -341,7 +336,8 @@ a:active {
 h3 {
  font-size: 40pt;
  text-align: center;
- text-decoration: underline
+ text-decoration: underline;
+ margin-bottom: -3em;
 }
 
 h2 {
