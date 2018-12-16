@@ -18,10 +18,88 @@
   src: url(hk-grotesk.woff2), url(hk-grotesk.woff);
 }
 
-@media only screen and (max-width: 1300px) {
+@media screen and (max-width: 1279px) {
   nav {
     display: none;
   }
+  #github {
+    display: none;
+  }
+  #linkedin {
+    display: none;
+  }
+  #gmail {
+    display:none
+  }
+  #intro-selfie {
+    display: none
+  }
+  #selfie {
+    display: block;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  body {
+    padding: 0 20px 0 20px
+  }
+  nav {
+    width: 0vw
+  }
+  section div {
+    max-width: 350px;
+    padding: 10vw 0 10vw 0;
+  }
+
+  section.self div {
+    height: 100vh
+  }
+
+  h2 {
+    margin: 0
+  }
+  .front-page {
+    display: none
+  }
+  img#selfie {
+    display: none;
+    margin: 0;
+  }
+  #intro-selfie {
+    display: none;
+    margin: 0;
+  }
+  h5 {
+    display: none;
+  }
+  header {
+    display: none;
+  }
+  .self-container {
+    height: 100vh;
+  }
+  .small-intro-text {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .small-intro-text {
+    margin-top: 10%;
+    vertical-align: middle;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .small-intro-text {
+    margin-top: 15%;
+    vertical-align: middle;
+  }
+}
+
+h6 {
+  display: none;
 }
 
 body {
@@ -49,7 +127,7 @@ header {
   z-index: 1;
   opacity: .99;
   transition: opacity 1s;
-  left: 50vw;
+  left: calc(53vw);
   top: 50vh;
 }
 
@@ -59,7 +137,9 @@ header {
 
 h5 {
   font-size: 12pt;
-  text-align: center;
+  /* text-align: center; */
+  left: auto;
+  right: auto;
 }
 
 #right {
@@ -93,7 +173,6 @@ section:nth-child(odd) {
 }
 
 section div {
-  padding: 40px;
   position: relative;
 }
 
@@ -134,7 +213,7 @@ div.stamps img {
 #linkedin {
   width: 40px;
   padding-left: 1px;
-  margin-top: -15px
+  margin-top: -40px
 }
 
 #gmail {
@@ -187,7 +266,7 @@ a:active {
 h3 {
  font-size: 40pt;
  text-align: center;
- margin-bottom: -3em;
+ text-decoration: underline
 }
 
 h2 {
@@ -211,12 +290,12 @@ header.scrolled {
 
 .sun-container {
   left: auto;
+  right: auto;
 }
 
 #small-intro {
   text-align: center;
   font-size: 16pt;
-  margin-top: -1em;
 }
 
 .scroll{
