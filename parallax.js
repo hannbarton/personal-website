@@ -58,7 +58,7 @@ const addMovement = function () {
 const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
 
 const addMove = function() {
-  if (viewportWidth < 1279) {
+  if (viewportWidth < 1066) {
 
   }
   else {
@@ -66,9 +66,9 @@ const addMove = function() {
     document.addEventListener("scroll", function () {
       addMovement()
     })
-    // window.addEventListener("resize", function () {
-    //   addMovement()
-    // })
+    window.addEventListener("resize", function () {
+      addMovement()
+    })
   }
 }
 

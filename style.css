@@ -18,7 +18,7 @@
   src: url(hk-grotesk.woff2), url(hk-grotesk.woff);
 }
 
-@media screen and (max-width: 1279px) {
+@media only screen and (max-width: 1279px) {
   nav {
     display: none;
   }
@@ -31,18 +31,21 @@
   #gmail {
     display:none
   }
-  #intro-selfie {
-    display: none
-  }
   #selfie {
     display: block;
     flex-wrap: wrap;
   }
+  h6 {
+    display:block !important;
+  }
 }
 
-@media screen and (max-width: 990px) {
+@media only screen and (max-width: 990px) {
   body {
     padding: 0 20px 0 20px
+  }
+  h6 {
+    display:block !important;
   }
   nav {
     width: 0vw
@@ -50,6 +53,10 @@
   section div {
     max-width: 350px;
     padding: 10vw 0 10vw 0;
+  }
+  section {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0
   }
 
   section.self div {
@@ -64,11 +71,9 @@
   }
   img#selfie {
     display: none;
-    margin: 0;
   }
   #intro-selfie {
     display: none;
-    margin: 0;
   }
   h5 {
     display: none;
@@ -84,22 +89,104 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media only screen and (max-width: 360px) {
+  h6 {
+    display:block !important;
+  }
   .small-intro-text {
-    margin-top: 10%;
     vertical-align: middle;
+    top: -15vh;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  section div {
+    max-width: 290px;
+    position: relative;
+  }
+  section {
+    max-width: 290px;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0
+  }
+  section.self {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
   }
 }
 
-@media screen and (max-width: 414px) {
+
+@media only screen and (max-width: 414px) {
+  h6 {
+    display:block !important;
+  }
   .small-intro-text {
-    margin-top: 15%;
     vertical-align: middle;
+    top: -10vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  section div {
+    max-width: 350px;
+    position: relative;
+  }
+  section {
+    padding: 0 0 0 0 !important;
+    margin: 0 0 0 0 !important;
+  }
+  section.self {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 411px) {
+  h6 {
+    display: block !important;
+  }
+  .small-intro-text {
+    vertical-align: middle;
+    top: -10vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  section div {
+    max-width: 350px;
+    position: relative;
+  }
+  section {
+    padding: 0 0 0 0 !important;
+    margin: 0 0 0 0 !important;
+  }
+  section.self {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
   }
 }
 
 h6 {
   display: none;
+  text-align: center;
+  font-size: 32pt;
 }
 
 body {
@@ -123,11 +210,10 @@ p {
 
 header {
   position: fixed;
-  text-align: center;
   z-index: 1;
   opacity: .99;
   transition: opacity 1s;
-  left: calc(53vw);
+  left: 50vw;
   top: 50vh;
 }
 
@@ -137,7 +223,7 @@ header {
 
 h5 {
   font-size: 12pt;
-  /* text-align: center; */
+  text-align: center;
   left: auto;
   right: auto;
 }
@@ -161,7 +247,7 @@ nav {
 }
 
 section {
-  margin: 300px 0 300px 0;
+  margin: 300px 0px 300px 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -173,6 +259,7 @@ section:nth-child(odd) {
 }
 
 section div {
+  padding: 40px;
   position: relative;
 }
 
@@ -237,7 +324,7 @@ a:visited {
 }
 
 a:hover {
-  color: #e5745d;;
+  color: #e5745d;
 }
 
 a:active {
@@ -307,3 +394,6 @@ header.scrolled {
   height: 50vh;
 }
 
+#contact-me:hover {
+  color:#e5745d
+}

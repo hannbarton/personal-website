@@ -27,18 +27,7 @@ const addStamp = function (x, y) {
     number = 0
   }
 }
-
-const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-
-const addStick = function() {
-  if (viewportWidth < 1279) {
-
-  }
-  else if (viewportWidth > 1280) {
-    document.addEventListener("click", function (event) {
-      addStamp(event.pageX, event.pageY)
-      document.querySelector("h5").setAttribute("style", "opacity: .0; transition: opacity 1s;")
-    })
-  }
-}
-
+document.addEventListener("click", function (event) {
+  addStamp(event.pageX, event.pageY)
+  document.querySelector("h5").setAttribute("style", "opacity: .0; transition: opacity 1s;")
+})
