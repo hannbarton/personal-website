@@ -397,3 +397,6 @@ header.scrolled {
 #contact-me:hover {
   color:#e5745d
 }
+#contact-me {
+  display:none;
+}
