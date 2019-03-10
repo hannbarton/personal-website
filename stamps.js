@@ -31,3 +31,8 @@ document.addEventListener("click", function (event) {
   addStamp(event.pageX, event.pageY)
   document.querySelector("h5").setAttribute("style", "opacity: .0; transition: opacity 1s;")
 })
+
+document.addEventListener("click", function() {
+  document.querySelector("#scroll-down").setAttribute("style", "opacity: .99; transition: opacity 1s;")
+
+})

@@ -173,6 +173,20 @@
   }
 }
 
+.small-intro-text {
+  margin: 0 1em
+}
+
+#scroll-down {
+  width: 50px;
+  display: block;
+  position: relative;
+  top: 13em;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: .0;
+}
+
 h6 {
   display: none;
   text-align: center;
@@ -208,7 +222,8 @@ header {
 }
 
 #intro-selfie {
-  width: 500px;
+  width: 400px;
+  margin: 0 1em 0 2em;
 }
 
 h5 {
