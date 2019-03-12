@@ -1,401 +1,307 @@
 @keyframes spin {
-  0% { transform: translate(-50%, -50%) rotate(0deg); }
-  100% { transform: translate(-50%, -50%) rotate(360deg);}
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 @font-face {
-  font-family:  "HK Grotesk";
-  src: url(hk-grotesk.woff2), url(hk-grotesk.woff);
+	font-family: "HK Grotesk";
+	src: url(hk-grotesk.woff2), url(hk-grotesk.woff);
 }
 
-@media only screen and (max-width: 1279px) {
-  nav {
-    display: none;
+@media only screen and (max-width: 1050px) {
+	img#selfie {
+		display: none;
   }
-  #github {
-    display: none;
-  }
-  #linkedin {
-    display: none;
-  }
-  #gmail {
-    display:none
-  }
-  #selfie {
+
+	#intro-selfie {
     display: block;
-    flex-wrap: wrap;
-  }
-  h6 {
-    display:block !important;
-  }
-}
-
-@media only screen and (max-width: 990px) {
-  body {
-    padding: 0 20px 0 20px
-  }
-  h6 {
-    display: block
-  }
-  nav {
-    width: 0vw
-  }
-  section div {
-    max-width: 350px;
-    padding: 10vw 0 10vw 0;
-  }
-  section {
-    padding: 0 0 0 0;
-    margin: 0 0 0 0
+    position: absolute;
+    top: 2em;
+    margin: 0;
   }
 
-  section.self div {
-    height: 100vh
+  img#intro-selfie {
+    margin: 0;
   }
 
-  h2 {
-    margin: 0
+  .small-intro-text {
+    padding: 7em 0 5em 0;
   }
-  .front-page {
-    display: none
-  }
-  img#selfie {
-    display: none;
-  }
-  #intro-selfie {
-    display: none;
+
+	header {
+		display: none;
   }
   h5 {
     display: none;
   }
-  header {
+  #sun {
     display: none;
   }
-  .self-container {
-    height: 100vh;
+  .front-page {
+    padding: 0 13vw;
   }
-  .small-intro-text {
-    position: relative;
+  section.self {
+    margin-top: 1vh;
+    margin-bottom: 10vh;
+  }
+  nav {
+    display: none;
+  }
+  section div {
+    margin: -3em 0;
   }
 }
 
-@media only screen and (max-width: 360px) {
-  h6 {
-    display:block !important;
-  }
+@media only screen and (max-width: 462px) {
   .small-intro-text {
-    vertical-align: middle;
-    top: -15vh;
-    margin: 0;
-    padding: 0;
+		vertical-align: middle;
+		top: -20vh;
+		margin: 0;
+		padding: 0;
   }
-  body {
-    padding: 0;
-    margin: 0;
+  .front-page {
+    padding: 0 0;
   }
-
-  section div {
-    max-width: 290px;
-    position: relative;
-  }
-  section {
-    max-width: 290px;
-    padding: 0 0 0 0;
-    margin: 0 0 0 0
-  }
-  section.self {
-    height: 100vh;
-    padding: 0;
-    margin: 0;
+  #intro-selfie {
+    display: none;
   }
 }
 
-
-@media only screen and (max-width: 414px) {
-  h6 {
-    display: inline-block;
-  }
+@media only screen and (max-width: 375px) {
   .small-intro-text {
-    vertical-align: middle;
-    top: -10vh;
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    padding: 0;
-    margin: 0;
-  }
-
-  section div {
-    max-width: 350px;
-    position: relative;
-  }
-  section {
-    padding: 0;
-    margin: 0
-  }
-  section.self {
-    height: 100vh;
-    padding: 0;
-    margin: 0;
+		top: -27vh;
   }
 }
 
-@media only screen and (max-width: 411px) {
-  h6 {
-    display: block !important;
-  }
+@media only screen and (max-width: 370px) {
   .small-intro-text {
-    vertical-align: middle;
-    top: -10vh;
-    margin: 0;
-    padding: 0;
+		top: -35vh;
   }
+}
 
-  body {
-    padding: 0;
-    margin: 0;
-  }
-
-  section div {
-    max-width: 350px;
-    position: relative;
-  }
-  section {
-    padding: 0 0 0 0;
-    margin: 0 0 0 0
-  }
-  section.self {
-    height: 100vh;
-    padding: 0;
-    margin: 0;
+@media only screen and (max-width: 320px) {
+  .small-intro-text {
+		top: -45vh;
   }
 }
 
 .small-intro-text {
-  margin: 0 1em
+	margin: 0 1em;
+}
+
+@keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-20px);
+	}
+	60% {
+		transform: translateY(-10px);
+	}
 }
 
 img#scroll-down {
-  width: 50px;
-  display: block;
-  position: relative;
-  top: 13em;
-  margin-left: auto;
-  margin-right: auto;
-  opacity: .0;
+	width: 40px;
+	display: block;
+	position: relative;
+	top: 9rem;
+	margin-left: auto;
+	margin-right: auto;
+	opacity: 0;
+	-moz-animation: bounce 2s infinite;
+	-webkit-animation: bounce 2s infinite;
+	animation: bounce 2s infinite;
 }
 
 h6 {
-  display: none;
-  text-align: center;
-  font-size: 32pt;
+	display: none;
+	text-align: center;
+	font-size: 32pt;
 }
 
 body {
 	font-family: "HK Grotesk", Arial;
 	font-size: 32px;
 	line-height: 1.25;
-  background-color: #18191a;
-  background-image: url('assets/stars.svg');
-  color: #d3d1cf;
+	background-color: #18191a;
+	background-image: url("assets/stars.svg");
+	color: #d3d1cf;
 	max-width: 1120px;
-  overflow-x: hidden;
-  transition: background-color 1s;
-  margin: 200px auto 200px auto;
+	overflow-x: hidden;
+	transition: background-color 1s;
+	margin: 200px auto 200px auto;
 }
 
 p {
-  font-family: "HK Grotesk";
-  color: #e5745d;
-  text-align: center;
+	font-family: "HK Grotesk";
+	color: #e5745d;
+	text-align: center;
 }
 
 header {
-  position: fixed;
-  z-index: 1;
-  opacity: .99;
-  transition: opacity 1s;
-  left: 50vw;
-  top: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #intro-selfie {
-  width: 400px;
-  margin: 0 1em 0 2em;
+	width: 400px;
+	margin: 0 1em 0 2em;
 }
 
 h5 {
-  font-size: 12pt;
-  text-align: center;
-}
-
-#right {
-  right: 4em
+	font-size: 12pt;
+	text-align: center;
 }
 
 nav {
-  position: fixed;
-  top: -4em;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  font-size: 15pt;
-  float: right;
-  height: 38vh;
-  width: 5vw;
-  z-index: 2;
+	position: fixed;
+	top: .7em;
+	right: .7em;
+	z-index: 2;
 }
 
 section {
-  margin: 300px 0px 300px 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+	margin: 300px 0px 300px 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 section:nth-child(odd) {
-  flex-direction: row-reverse;
+	flex-direction: row-reverse;
 }
 
 section div {
-  padding: 40px;
-  position: relative;
+	padding: 40px;
+	position: relative;
 }
 
 section img {
-  position: relative;
+	position: relative;
 }
 
 div.stamps {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 50%;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
 }
 
 div.stamps img {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  animation: spin 30s linear infinite;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	animation: spin 30s linear infinite;
 }
 
 .rounded-corners {
-  border-radius: 2px;
+	border-radius: 2px;
 }
 
 #selfie {
-  transform: rotate(180deg);
-  width: 500px
+	width: 500px;
 }
 
 .pic:hover {
-  transform: scale(1.07)
+	transform: scale(1.07);
 }
 
 #github {
-  width: 38px;
+	width: 38px;
 }
 
 #linkedin {
-  width: 40px;
-  padding-left: 1px;
-  margin-top: -40px
+	width: 40px;
+	padding-left: 1px;
+	margin-top: -40px;
 }
 
 #gmail {
-  width: 35px;
-  padding-left: 1px;
-  margin-top: -35px;
+	width: 35px;
+	padding-left: 1px;
+	margin-top: -35px;
 }
 
 a {
-  text-decoration: none;
-  color: #d3d1cf;
+	text-decoration: none;
+	color: #d3d1cf;
 }
 
 a:visited {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 a:hover {
-  color: #e5745d;
+	color: #e5745d;
 }
 
 a:active {
-  color: #d3d1cf
+	color: #d3d1cf;
 }
 
 #github-icon {
-  width: 35px;
-  height: auto;
+	width: 35px;
+	height: auto;
 }
 
 #github-icon:hover {
-  transform: scale(1.07);
-  height: auto;
+	transform: scale(1.07);
+	height: auto;
 }
 
-.git-align {
-  display: block;
-  padding: -1em;
-}
-
-#selfie:hover{
-  transform: scale(1.07);
+#selfie:hover {
+	transform: scale(1.07);
 }
 
 h3 {
- font-size: 40pt;
- text-align: center;
- text-decoration: underline;
- margin-bottom: -3em;
+	font-size: 40pt;
+	text-align: center;
+	text-decoration: underline;
+	margin-bottom: -3em;
 }
 
 h2 {
-  font-size: 42pt;
-  text-align: center;
+	font-size: 42pt;
+	text-align: center;
 }
 
 header.scrolled {
-  opacity: .0;
+	opacity: 0;
+	transition: opacity 1.2s;
 }
 
 #intro {
-  text-align: center;
+	text-align: center;
 }
 
 #sun {
-  width: 300px;
-  transform: translate(-50%, -50%);
-  animation: spin 30s linear infinite;
-}
-
-.sun-container {
-  left: auto;
-  right: auto;
+	width: 20vw;
+	animation: spin 30s linear infinite;
 }
 
 #small-intro {
-  text-align: center;
-  font-size: 16pt;
+	text-align: center;
+	font-size: 16pt;
 }
 
-.scroll{
-  text-align: center;
-  margin-top: -3em;
-}
-
-.front-page {
-  height: 50vh;
+.scroll {
+	text-align: center;
+	margin-top: -3em;
 }
 
 #contact-me:hover {
-  color:#e5745d
+	color: #e5745d;
 }
 #contact-me {
-  display:none;
+	display: none;
 }

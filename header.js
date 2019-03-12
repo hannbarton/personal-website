@@ -9,6 +9,6 @@ document.addEventListener("scroll", function () {
 
   } else {
     headerTag.classList.remove("scrolled")
-    scrollTag.setAttribute("style", "opacity: .0; transition: opacity 1.5s;")
+    scrollTag.setAttribute("style", "opacity: .0; transition: opacity 2.5s;")
   }
 })

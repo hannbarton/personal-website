@@ -42,26 +42,10 @@ const addMovement = function () {
   })
 }
 
-// // run on page load
-// addMovement()
-
-// // run on scroll
-// document.addEventListener("scroll", function () {
-//   addMovement()
-// })
-
-// // run on resize
-// window.addEventListener("resize", function () {
-//   addMovement()
-// })
-
 const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
 
 const addMove = function() {
-  if (viewportWidth < 1066) {
-
-  }
-  else {
+  if (viewportWidth > 1024) {
     addMovement()
     document.addEventListener("scroll", function () {
       addMovement()
